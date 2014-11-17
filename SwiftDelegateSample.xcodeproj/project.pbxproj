@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		C3254B4C1A19E94E009A066D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3254B4B1A19E94E009A066D /* AppDelegate.swift */; };
 		C3254B4F1A19E94E009A066D /* SwiftDelegateSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3254B4D1A19E94E009A066D /* SwiftDelegateSample.xcdatamodeld */; };
-		C3254B511A19E94E009A066D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3254B501A19E94E009A066D /* ViewController.swift */; };
-		C3254B541A19E94E009A066D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3254B521A19E94E009A066D /* Main.storyboard */; };
 		C3254B561A19E94E009A066D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3254B551A19E94E009A066D /* Images.xcassets */; };
 		C3254B591A19E94E009A066D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3254B571A19E94E009A066D /* LaunchScreen.xib */; };
 		C3254B651A19E94E009A066D /* SwiftDelegateSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3254B641A19E94E009A066D /* SwiftDelegateSampleTests.swift */; };
+		C3254B701A19E9F1009A066D /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3254B6F1A19E9F1009A066D /* RootTableViewController.swift */; };
+		C3254B721A19EAF6009A066D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3254B711A19EAF6009A066D /* DetailViewController.swift */; };
+		C3254B741A19ED9E009A066D /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3254B731A19ED9E009A066D /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		C3254B4A1A19E94E009A066D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3254B4B1A19E94E009A066D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3254B4E1A19E94E009A066D /* SwiftDelegateSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftDelegateSample.xcdatamodel; sourceTree = "<group>"; };
-		C3254B501A19E94E009A066D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C3254B531A19E94E009A066D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3254B551A19E94E009A066D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C3254B581A19E94E009A066D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C3254B5E1A19E94E009A066D /* SwiftDelegateSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDelegateSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3254B631A19E94E009A066D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3254B641A19E94E009A066D /* SwiftDelegateSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDelegateSampleTests.swift; sourceTree = "<group>"; };
+		C3254B6F1A19E9F1009A066D /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		C3254B711A19EAF6009A066D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C3254B731A19ED9E009A066D /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,8 @@
 		C3254B481A19E94E009A066D /* SwiftDelegateSample */ = {
 			isa = PBXGroup;
 			children = (
+				C3254B6E1A19E9D1009A066D /* ViewController */,
 				C3254B4B1A19E94E009A066D /* AppDelegate.swift */,
-				C3254B501A19E94E009A066D /* ViewController.swift */,
-				C3254B521A19E94E009A066D /* Main.storyboard */,
 				C3254B551A19E94E009A066D /* Images.xcassets */,
 				C3254B571A19E94E009A066D /* LaunchScreen.xib */,
 				C3254B4D1A19E94E009A066D /* SwiftDelegateSample.xcdatamodeld */,
@@ -113,6 +114,16 @@
 				C3254B631A19E94E009A066D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3254B6E1A19E9D1009A066D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3254B6F1A19E9F1009A066D /* RootTableViewController.swift */,
+				C3254B711A19EAF6009A066D /* DetailViewController.swift */,
+				C3254B731A19ED9E009A066D /* ModalViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3254B541A19E94E009A066D /* Main.storyboard in Resources */,
 				C3254B591A19E94E009A066D /* LaunchScreen.xib in Resources */,
 				C3254B561A19E94E009A066D /* Images.xcassets in Resources */,
 			);
@@ -215,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3254B511A19E94E009A066D /* ViewController.swift in Sources */,
 				C3254B4F1A19E94E009A066D /* SwiftDelegateSample.xcdatamodeld in Sources */,
+				C3254B741A19ED9E009A066D /* ModalViewController.swift in Sources */,
 				C3254B4C1A19E94E009A066D /* AppDelegate.swift in Sources */,
+				C3254B701A19E9F1009A066D /* RootTableViewController.swift in Sources */,
+				C3254B721A19EAF6009A066D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C3254B521A19E94E009A066D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3254B531A19E94E009A066D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C3254B571A19E94E009A066D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,6 +415,7 @@
 				C3254B6A1A19E94E009A066D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3254B6B1A19E94E009A066D /* Build configuration list for PBXNativeTarget "SwiftDelegateSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				C3254B6D1A19E94E009A066D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
